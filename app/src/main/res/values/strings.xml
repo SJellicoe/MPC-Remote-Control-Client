@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MPC Remote</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="playButtonText">Play/Pause</string>
+    <string name="forwardButtonText">&gt;&gt;</string>
+    <string name="backButtonText">&lt;&lt;</string>
+    <string name="stopButtonText">Stop</string>
+    <string name="volUpButtonText">Vol +</string>
+    <string name="volDownButtonText">Vol -</string>
+    <string name="saveIPButtonText">Save IP</string>
+    <string name="connectButtonText">Connect</string>
+    <string name="ipLabelText">IP Address:</string>
+</resources>

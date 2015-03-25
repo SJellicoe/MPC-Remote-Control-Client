@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".Main">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity = "center"
+        android:id="@+id/connection"
+        android:weightSum="1.0">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ipLabel"
+            android:text="@string/ipLabelText"
+            android:layout_weight=".15"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".55"
+            android:id="@+id/ipText"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:text="@string/connectButtonText"
+            android:id="@+id/connect"
+            android:onClick="Connect" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:id="@+id/saveIP"
+        android:layout_below="@id/connection">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/saveIPButton"
+            android:text="@string/saveIPButtonText"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity = "center"
+        android:id="@+id/bottomLayout"
+        android:weightSum="1.0"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/backButton"
+            android:text="@string/backButtonText"
+            android:layout_weight="0.3"
+            android:onClick="Previous"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/playButton"
+            android:text="@string/playButtonText"
+            android:layout_weight="0.4"
+            android:onClick="PlayPause"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/forwardButton"
+            android:text="@string/forwardButtonText"
+            android:layout_weight="0.3"
+            android:onClick="Next"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity = "center"
+        android:id="@+id/stopVolume"
+        android:weightSum="1.0"
+        android:layout_above="@id/bottomLayout"
+        >
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/volDownButton"
+            android:text="@string/volDownButtonText"
+            android:layout_weight="0.3"
+            android:onClick="VolumeDown"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/stopButton"
+            android:text="@string/stopButtonText"
+            android:layout_weight="0.4"
+            android:onClick="Stop"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/volUpButton"
+            android:text="@string/volUpButtonText"
+            android:layout_weight="0.3"
+            android:onClick="VolumeUp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
